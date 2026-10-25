@@ -1,0 +1,14 @@
+watch_dir = "~/Downloads"
+dest_dir  = "~/Sorted"
+
+model = "qwen2.5:3b"      # CPU-friendly. Try "qwen2.5:1.5b" (faster) or "llama3.2:3b".
+settle_seconds = 60       # ignore files modified in the last minute (still downloading?)
+date_prefix = true        # 2026-10-19-invoice-acme.pdf
+
+categories = ["documents", "invoices", "images", "code", "data", "media", "archives", "installers", "misc"]
+
+rules = [
+  "Anything that looks like a bill, receipt or invoice goes in invoices.",
+  "Screenshots go in images and are named after what they show.",
+  "University or course material goes in documents.",
+]
